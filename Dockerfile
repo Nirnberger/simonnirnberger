@@ -6,7 +6,7 @@
 #   - läuft als User "nginx" (UID 101), nicht als root
 #   - lauscht auf Port 8080 (kein privilegierter Port < 1024 nötig)
 #   - schreibt PID- und Temp-Dateien nach /tmp (read-only Root-FS möglich)
-FROM nginxinc/nginx-unprivileged:1.28-alpine
+FROM nginxinc/nginx-unprivileged:1.31-alpine
 
 # Das Basis-Image setzt USER 101; für die Dateirechte kurz root.
 USER root
